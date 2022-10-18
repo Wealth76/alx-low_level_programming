@@ -1,4 +1,5 @@
 #include "main.h"
+
 /*
  * main - -putchar
  *The code start with a new line
@@ -7,14 +8,14 @@
 
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	-putchar('a');
-	_putchar('r');
-	_putchar('\n');
-	return (0);
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+-putchar('a');
+_putchar('r');
+_putchar('\n');
+return (0);
 }
