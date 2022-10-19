@@ -1,16 +1,15 @@
 #include "main.h"
 
 /**
- * main - print lower-case alphabet
- * a new line
+ *print_alphabet  - lower-case
  */
 
-void print_alphabet(void);
+void print_alphabet(void)
 {
-	char Wealth;
+	char wealth;
 
-	for (Wealth = 'a'; la <= 'z'; Wealth++)
-		_putchar(Wealth);
+	for (wealth = 'a'; wealth <= 'z'; wealth++)
+		_putchar(wealth);
 
 	_putchar('\n');
 }
