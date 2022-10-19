@@ -12,7 +12,7 @@ void print_alphabet_x10(void)
 	while (times++ <= 9)
 	{
 		for (wealth = 'a'; wealth <= 'z'; wealth++)
-			_putchar(letter);
+			_putchar(wealth);
 		_putchar('\n');
 	}
 }
