@@ -2,7 +2,7 @@
 /**
  *_isalpha - check char alphabet
  *@c: check char
- *Return: if letter is lower or upper 1, 0 if no
+ *Return: if letter is lower or upper 1, else 0.
  */
 
 int _isalpha(int c)
