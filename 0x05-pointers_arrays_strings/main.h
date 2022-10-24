@@ -6,5 +6,6 @@ int _putchar(char c);
 void swap_int(int *a, int *b);
 void swap_int(int *a, int *b);
 int _strlen(char *s);
+void puts2(char *str);
 
 #endif
