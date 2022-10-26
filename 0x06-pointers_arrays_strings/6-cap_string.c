@@ -3,7 +3,7 @@
 /**
  * cap_string - capitalize all words inside the string
  * @s: string
- * Return: address of s
+ * Return: address of j
  */
 
 char *cap_string(char *)
@@ -11,22 +11,22 @@ char *cap_string(char *)
 	int i = 0, j;
 	char a[] = " \t\n,;.!?\"(){}";
 
-	while (*(s + i))
+	while (*(j + i))
 	{
-		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+		if (*(j + i) >= 'a' && *(j + i) <= 'z')
 		{
 			if (i == 0)
-				*(s + i) -= 'a' - 'A';
+				*(j + i) -= 'a' - 'A';
 			else
 			{
 				for (j = 0; j <= 12; j++)
 				{
-					if (a[j] == *(s + i - 1))
-						*(s + i) -= 'a' - 'A';
+					if (a[j] == *(j + i - 1))
+						*(j + i) -= 'a' - 'A';
 				}
 			}
 		}
 		i++;
 	}
-	return (s);
+	return (j);
 }
