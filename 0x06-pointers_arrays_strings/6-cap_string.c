@@ -3,30 +3,30 @@
 /**
  * cap_string - capitalize all words inside the string
  * @s: string
- * Return: address of j
+ * Return: address of s
  */
 
-char *cap_string(char *)
+char *cap_string(char *s)
 {
 	int i = 0, j;
 	char a[] = " \t\n,;.!?\"(){}";
 
-	while (*(j + i))
+	while (*(s + i))
 	{
-		if (*(j + i) >= 'a' && *(j + i) <= 'z')
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
 		{
 			if (i == 0)
-				*(j + i) -= 'a' - 'A';
+				*(s + i) -= 'a' - 'A';
 			else
 			{
-				for (j = 0; j <= 12; j++)
+				for (s = 0; j <= 12; j++)
 				{
-					if (a[j] == *(j + i - 1))
-						*(j + i) -= 'a' - 'A';
+					if (a[j] == *(s + i - 1))
+						*(s + i) -= 'a' - 'A';
 				}
 			}
 		}
 		i++;
 	}
-	return (j);
+	return (s);
 }
