@@ -10,25 +10,37 @@
  * Return: void
  */
 
-void print_line(char *c, int s, int l)
+void print_line(char b, int size)
 {
-	int j, k;
+	int j, k, l;
 
-	for (j = 0; j <= 9; j++)
+	if (size <= 0)
+		printf('\n');
+	else
 	{
-		if (j <= s)
-			", c[l * 10 + j]);
-		else
-			printf("  ");
-		if (j % 2)
-			putchar(' ');
-	}
-	for (k = 0; k <= s; k++)
-	{
-
-		if (c[l * 10 + k] > 31 && c[l * 10 + k] < 127)
-			putchar(c[l * 10 + k]);
-		else
-			putchar('.');
+		for (j = 0; j < size; j += 10)
+		{
+			printf("%.8x:", j);
+			for (k = j; k < j + 10; k++)
+			{
+				if (k % 2 == 0)
+					printf(" ");
+				if (k < size)
+					printf("%.2x", *(b + k));
+				else
+					printf(" ");
+			}
+			printf(" ");
+			for (l = j; l < j + 10; l++)
+			{
+				if (l >= size)
+					break;
+				if (*(b + l) < 32 || *(b + l) > 126)
+					printf("%c", '.');
+				else
+					printf("%c", *(b + l));
+			}
+			printf("\n");
+		}
 	}
 }
