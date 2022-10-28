@@ -4,13 +4,12 @@
 
 /**
  * print_line - prints a s bytes of a buffer
- * @c: buffer to print
- * @s: bytes of buffer to print
- * @l: line of buffer to print
+ * @b: buffer to print
+ * @size: bytes of buffer to print
  * Return: void
  */
 
-void print_line(char b, int size)
+void print_line(char *b, int size)
 {
 	int j, k, l;
 
