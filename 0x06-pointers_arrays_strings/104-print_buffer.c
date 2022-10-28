@@ -3,18 +3,18 @@
 #include <stdio.h>
 
 /**
- * print_line - prints a s bytes of a buffer
+ * print_buffer - prints a s bytes of a buffer
  * @b: buffer to print
  * @size: bytes of buffer to print
  * Return: void
  */
 
-void print_line(char *b, int size)
+void print_buffer(char *b, int size)
 {
 	int j, k, l;
 
 	if (size <= 0)
-		printf('\n');
+		printf("\n");
 	else
 	{
 		for (j = 0; j < size; j += 10)
