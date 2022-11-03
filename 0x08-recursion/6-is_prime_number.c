@@ -22,7 +22,7 @@ int check(int a, int b)
  * Return: 1
  */
 
-int is_prime_number(int n);
+int is_prime_number(int n)
 {
 	if (n == 2)
 		return (1);
