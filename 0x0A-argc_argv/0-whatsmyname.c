@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-/*
- * main - the void fuction to print
+/**
+ * main - the fuction to print its name with a new line
  * @argc: arguments num 1
  * @argv: arrguments num 2
  * Return: o
