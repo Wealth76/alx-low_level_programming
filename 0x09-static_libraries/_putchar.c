@@ -1,11 +1,7 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
-/**
- * _putchar - the fuctio to call the character c
- * @c: the char to print
- * Return: success
- */
-int _putchar(char c)
+int main()
 {
-	return (write(1, &c, 1));
+	return (0);
 }
