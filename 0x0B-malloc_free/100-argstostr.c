@@ -1,6 +1,13 @@
 #include "main.h"
 #include <stdlib.h>
 
+
+
+/**
+ * argstostr - concatenates all the arguments for your program here
+ * @ac: argument count
+ * @av: argument variable
+ */
 char *argstostr(int ac, char **av)
 {
 	char *str, *s;
