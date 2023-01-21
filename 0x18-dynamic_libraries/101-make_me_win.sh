@@ -1,3 +1,3 @@
 #!/bin/bash
-export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH
-sudo LD_PRELOAD=$LD_LIBRARY_PATH ./gm
+wget -P /tmp https://github.com/eyoul/alx-low_level_programming/raw/main/0x18-dynamic_libraries/iwin.so
+export LD_PRELOAD=/tmp/iwin.so
